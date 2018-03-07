@@ -17,10 +17,12 @@ import requests
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
 coinName = "BTC"
+# Date (UTC)
 dateutc = "2018-03-06"
+# Time (UTC)
 timeutc = "15:10:00"
 
-# Fetch price from the following url
+# Fetch price from the following url (Upbit temporal API)
 url = "https://crix-api-endpoint.upbit.com/v1/crix/candles/minutes/10?code=CRIX.UPBIT.USDT-"\
       + coinName\
       + "&count=1&to="\
@@ -28,6 +30,7 @@ url = "https://crix-api-endpoint.upbit.com/v1/crix/candles/minutes/10?code=CRIX.
       + "%20"\
       + timeutc
 
+# Try fetching
 try:
     fetch = requests.get(url, headers=headers)
 
@@ -40,7 +43,7 @@ data = fetch.json()
 code = data[0]['code']
 print(code)
 
-
+# Show fetched info.
 for i in range(len(data)):
     date = data[i]['candleDateTime']
     onlyDate = date.split('T')
