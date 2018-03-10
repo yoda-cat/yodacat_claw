@@ -16,6 +16,7 @@ import requests
 # Ref: https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
+# Coin name
 coinName = "BTC"
 # Date (UTC)
 dateutc = "2018-03-06"
