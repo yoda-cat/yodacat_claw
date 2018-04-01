@@ -1,9 +1,7 @@
 """
-# Author: yodacatbot@gmail.com
-
-# Descriptions:
-
-# References
+Author: yodacatbot@gmail.com
+Descriptions:
+References:
    - https://steemit.com/kr/@tradingideas/upbit-1
 """
 
